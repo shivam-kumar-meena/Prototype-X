@@ -20,7 +20,7 @@ user_input = st.text_input("You:", placeholder="Type your message here...")
 if st.button("Send") and user_input.strip():
     # Send to backend (if deployed later on Render/localhost)
     try:
-        response = requests.post("http://127.0.0.1:5000/chat", json={"query": user_input})
+        response = requests.post("https://prototype-x.onrender.com", json={"query": user_input})
         bot_reply = response.json().get("response", "No response from backend.")
     except Exception:
         bot_reply = "⚠️ Backend not reachable. (Will work once deployed!)"
