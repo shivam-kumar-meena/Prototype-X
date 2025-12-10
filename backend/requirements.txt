@@ -1,20 +1,19 @@
-# Core
 flask==3.0.2
 flask-cors==4.0.0
 requests>=2.31
 
-# Vector Store (light)
 chromadb==0.4.24
 numpy==1.26.4
 
-# NLP (Streamlit-safe)
+# ✅ HuggingFace model support (no tokenizers build issue)
+transformers==4.37.2
 sentence-transformers==2.2.2
-transformers==4.40.1
+huggingface-hub==0.23.2
 
 # Utilities
 pypdf==4.2.0
 
-# Web UI
+# Web App
 streamlit==1.41.0
 
 # Deployment
