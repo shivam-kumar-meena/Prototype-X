@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+
+# Cache & model files
+*.bin
+*.dll
+*.so
+*.pkl
+*.sqlite3
+*.log
+*.cache/
+
+# Local data & embeddings
+chroma_store/
+vector_db/
+uploads/
+data/
+knowledge/
+
+# VS Code settings
+.vscode/
